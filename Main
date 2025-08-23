@@ -1,0 +1,6 @@
+% Resize langsung ke 9x9 piksel
+img = imread('contoh/contohWM.png');
+img_resize = imresize(img, [3 3]);
+imwrite(img_resize, 'gambar_output.png');
+imshow(img_resize);
+title('Hasil Resize 9x9 Piksel');
